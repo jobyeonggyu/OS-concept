@@ -82,3 +82,28 @@
 <h2> 교착 상태 </h2>
   -하나 이상의 프로세스가 절대 일어나지 않을 특성 사건을 기다리고 있는 상태로 Dead Lock이라고도 불린다 <br>
   
+<h1> [CPU 스케줄링] </h1>
+  -CPU를 언제, 어느 프로세스에게 할당할 것인지 결정하는 작업 <br>
+  
+<h2> CPU 스케줄링의 목적 </h2>
+  -스케줄링의 공정성 <br>
+  -처리량 최대화 <br>
+  -응답 시간 최소화 <br>
+  -반환 시간 예측 가능 <br>
+  -자원의 균형적인 사용 <br>
+  -응답 시간과 자원 활용도의 조화 <br>
+  -프로세스의 실행의 무한 연기 배제 <br>
+  -우선순위에 따른 실행 보장 <br>
+  -시스템의 과도한 부하 방지 <br>
+  
+<h2> CPU 스케줄링 기법 </h2>
+  -FCFS (First Come First Served) - 프로세스 순서대로 CPU할당 <br> 
+  -라운드 로빈 (Round Robin) - FCFS + 사용시간지정 <br>
+  -SJF (Short Job First) - 실행시간이 짧은 순서부터 할당 <br>
+  -SRT (Short Remaining Time) - 잔여 싱핼 시간을 비교하여 짧은 순서부터 할당 <br>
+  -HRN (Highest Responese ratio Next) - 응답률을 계산하여 높은 순서부터 할당 <br>
+  -우선순위 - 운선수위를 부여하여 높은 순서부터 할당 <br>
+  -MLQ(Multi Level Queue) - 작업 특성에 따라 각 각 별도의 스케줄링 기법 <br>
+  -MFQ(Multi level Feedback Queue) - 입출력 위주와 연산 위주 프로세스의 특성에 따라 CPU사용 시간을 다르게 부여하는 선점 방식의 스케줄링 기법 <br>
+  
+  *응답률 = (대기 시간 + 실행 시간) / 실행 시간
