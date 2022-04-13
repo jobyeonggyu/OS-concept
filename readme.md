@@ -104,6 +104,13 @@
   -HRN (Highest Responese ratio Next) - 응답률을 계산하여 높은 순서부터 할당 <br>
   -우선순위 - 운선수위를 부여하여 높은 순서부터 할당 <br>
   -MLQ(Multi Level Queue) - 작업 특성에 따라 각 각 별도의 스케줄링 기법 <br>
-  -MFQ(Multi level Feedback Queue) - 입출력 위주와 연산 위주 프로세스의 특성에 따라 CPU사용 시간을 다르게 부여하는 선점 방식의 스케줄링 기법 <br>
+  -MFQ(Multi level Feedback Queue) - 입출력 위주와 연산 위주 프로세스의 특성에 따라 CPU사용 시간을 다르게 부여하는 선점 방식의 스케줄링 기법 <br> <br>
   
   *응답률 = (대기 시간 + 실행 시간) / 실행 시간
+
+<h2> CPU 스케줄링 기법의 성능 기준 </h2>
+  -CPU활용률 <br>
+  -처리율 <br>
+  -반환 시간 <br>
+  -대기 시간 <br>
+  -응답 시간 <br>
